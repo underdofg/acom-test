@@ -14,7 +14,7 @@ export class Product extends Component {
         const date2 = new Date();
         const diffTime = Math.abs(date2 - date1);
         const diffWeeks = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 7)); 
-        // console.log(diffDays);
+        // console.log(diffWeeks);
         
     return (
       <Card
