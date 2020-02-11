@@ -7,7 +7,7 @@ export class products extends Component {
 
     renderProducts() {
         return this.props.products.map(product =>
-         <Col type='flex' justify='center' className="3" span={5}>
+         <Col type='flex' justify='center' className="3" gutter={5}>
             <Product dataDetail={product} />
          </Col>
        )

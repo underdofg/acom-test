@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row,Col } from 'antd';
+import { Row,Col, Card } from 'antd';
 
 import Products from './Products'
 import Footer from './Footer';
@@ -29,10 +29,11 @@ export class ListCards extends Component {
              Items 1-12of23  
            </div>
            <br></br>
-            <Col type='flex' justify='center' spam={20}>
+            <Col type='flex' justify='center' gutter={22}>
                 <Products products = {this.state.data}/>
             </Col>
-            <br></br>
+            <Col>
+            </Col>
             <Footer />
          </Row>
         )

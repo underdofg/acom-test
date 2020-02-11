@@ -13,35 +13,40 @@ export class Product extends Component {
         const date1 = new Date(product.created_at);
         const date2 = new Date();
         const diffTime = Math.abs(date2 - date1);
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 7)); 
+        const diffWeeks = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 7)); 
         // console.log(diffDays);
         
     return (
       <Card
           hoverable
           style= {{ 
-            width: 340, 
-            padding: '3px',
-            paddingLeft: '8px', 
-            paddingBottom: '30px', 
-            margin:'2px' }}
+            width: 270,
+            paddingLeft: '2px',
+            margin:'10px' }}
           cover={
-            <img alt='product' 
+            <img 
+            style = {{
+              marginBottom:'20px'
+            }}
+            alt='product' 
             src={product.image_url} 
             /> }
          >
          <div 
-          style={{ 
-            padding: '4px', 
-            paddingTop: '40px'}}>
+          style={{
+            height:'10px' ,
+            font: '13px',
+            width: '370', 
+            borderBottom: '20px', 
+            marginTop: '100x'}}>
               {product.title}
           </div>
          <div style={{ 
-           padding: '2px',
-           paddingBottom: '7px',
+           marginTop: '45px',
+           marginBottom: '7px',
            font:'10 px', 
            fontWeight:'initial'}}>
-             {diffDays} weeks ago
+             {diffWeeks} weeks ago
           </div>  
          <StarRatings 
             style = {{padding:'4px'}}
