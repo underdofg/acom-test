@@ -28,8 +28,8 @@ export class ListCards extends Component {
            <div style={{ paddingLeft:'15px', paddingTop:'20px'}}>
              Items 1-12of23  
            </div>
-           <br></br>
-            <Col type='flex' justify='center' gutter={22}>
+           <br/>
+            <Col type='flex' justify='center' gutter={22} style={{color:'black'}}>
                 <Products products = {this.state.data}/>
             </Col>
             <Col>

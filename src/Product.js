@@ -42,7 +42,7 @@ export class Product extends Component {
               {product.title}
           </div>
          <div style={{ 
-           marginTop: '45px',
+           marginTop: '60px',
            marginBottom: '7px',
            font:'10 px', 
            fontWeight:'initial'}}>
